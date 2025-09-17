@@ -1,0 +1,283 @@
+/* ---------- ABOUT PAGE ---------- */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #222;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+   transition: color 0.3s ease, background 0.3s ease, border-radius 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f00;             /* text turns green */
+  background: rgba(255, 255, 255, 0.1); /* subtle background */
+  border-radius: 4px;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #00b894;
+}
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(to right, #00b894, #0984e3);
+  color: white;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Bio Section */
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  align-items: center;
+}
+
+.bio-img img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.bio-text h2 {
+  margin-bottom: 1rem;
+}
+
+.bio-text p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Skills Section */
+.skills {
+  background: #f9f9f9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.skills h2 {
+  margin-bottom: 2rem;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skills li:hover {
+  background: #00b894;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* Experience Section */
+.experience {
+  padding: 4rem 2rem;
+}
+
+.experience h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: 3px solid #00b894;
+  padding-left: 2rem;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background: #00b894;
+  border-radius: 50%;
+}
+
+.timeline-item h3 {
+  margin-bottom: 0.5rem;
+  color: #00b894;
+}
+
+/* Call-to-Action */
+.cta {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #222;
+  color: white;
+}
+
+.cta .btn {
+  background: #00b894;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta .btn:hover {
+  background: #0984e3;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+}
+
+footer .socials a {
+  color: #00b894;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+footer .socials a:hover {
+  color: #0984e3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bio {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .bio-img {
+    order: -1;
+  }
+}
+
+/* Popup Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h2 {
+  margin-bottom: 1rem;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.modal-content form button {
+  background: #d2691e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-content form button:hover {
+  background: #a0522d;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

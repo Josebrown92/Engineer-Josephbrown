@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Portfolio</title>
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Joseph Thee engineer</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="#" id="openContactAbout">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <h1>About Me</h1>
+    <p>Passionate Software Engineer turning ideas into impactful solutions.</p>
+    <p><span id="typing"></span></p>
+  </section>
+
+  <!-- Bio Section -->
+  <section class="bio">
+    <div class="bio-img">
+      <img src="profile.jpeg" alt="Profile photo" />
+    </div>
+    <div class="bio-text">
+      <h2>Who I Am</h2>
+      <p>
+        I am a software engineer with a focus on creating innovative and scalable solutions. 
+        My journey started with curiosity for technology, and has grown into a mission 
+        to build applications that solve real-world problems.
+      </p>
+      <p>
+        I specialize in full-stack development, backend systems, and AI-driven applications. 
+        My goal is to leverage technology to drive positive change in businesses and communities.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>JavaScript / TypeScript</li>
+      <li>Python (Django, Flask, FastAPI)</li>
+      <li>React, Node.js</li>
+      <li>SQL & NoSQL Databases</li>
+      <li>Cloud (AWS, GCP)</li>
+      <li>AI & Automation Tools</li>
+    </ul>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience">
+    <h2>Experience & Achievements</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>2023 – Present</h3>
+        <p>Lead Developer at FinTrack – Built AI-powered finance tracking app.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2021 – 2023</h3>
+        <p>Freelance Software Engineer – Delivered 10+ projects for startups and SMEs.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2019 – 2021</h3>
+        <p>BSc Computer Science – University XYZ.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-to-Action -->
+  <section class="cta">
+    <h2>Want to work together?</h2>
+    <a href="contact.html" class="btn">Get In Touch</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MyPortfolio. All rights reserved.</p>
+    <div class="socials">
+      <a href="www.linkedin.com/in/joseph-njoroge-767153377">LinkedIn</a>
+      <a href="https://github.com/Josebrown92">GitHub</a>
+      <a href="https://www.tiktok.com/@josephnjoroge9731">Tiktok</a>
+    </div>
+  </footer>
+
+  <!-- Contact Popup Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Get in Touch</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Software Engineer | Joseph</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Joseph thee Engineer</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+          <!-- Contact opens popup -->
+        <li><a href="#" id="openContactHeader">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello, I’m <span>Joseph Njoroge</span></h1>
+      <p>A Software Engineer building impactful solutions for the web, mobile, and beyond.</p>
+      <p><span id="typing"></span></p>
+      <a href="portfolio.html" class="btn">View My Work</a>
+    </div>
+    <div class="hero-img">
+      <img src="profile.jpeg" alt="Developer illustration" />
+    </div>
+  </section>
+
+  <!-- Featured Project -->
+  <section class="featured">
+    <h2>Featured Project</h2>
+    <div class="project-card">
+      <h3>Shield Security Services</h3>
+      <p>At Shield Security Services, we are committed to safeguarding what matters most to you—your people, property, and peace of mind. With a team of highly trained professionals, cutting-edge technology, and a dedication to excellence, we provide reliable security solutions tailored to your unique needs.
+         Whether you require corporate security, residential protection, event security, or surveillance systems, we stand as your trusted partner in creating a safe and secure environment. Our mission is simple: to deliver protection you can trust, 24/7.
+         Choose Shield Security Services—because your safety deserves nothing less than the best.</p>
+      <a href="portfolio.html" class="btn">See Details</a>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="services-preview">
+    <h2>What I Do</h2>
+    <div class="service-grid">
+      <div class="service">
+        <h3>Web Development</h3>
+        <p>Modern, responsive websites using the latest technologies.</p>
+      </div>
+      <div class="service">
+        <h3>Backend Systems</h3>
+        <p>Scalable APIs and databases for robust applications.</p>
+      </div>
+      <div class="service">
+        <h3>AI & Automation</h3>
+        <p>Smart solutions powered by machine learning and automation tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial">
+      <p>“An excellent engineer who delivers clean, scalable solutions.”</p>
+      <span>- Johnson Mwangi | Architecture</span>
+    </div>
+    <div class="testimonial">
+      <p>“Reliable, innovative, and easy to work with. Highly recommended.”</p>
+      <span>- Colleague</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Joseph Njoroge. All rights reserved.</p>
+    <div class="socials">
+      <a href="www.linkedin.com/in/joseph-njoroge-767153377">LinkedIn</a> 
+      <a href="https://github.com/Josebrown92">GitHub</a>
+      <a href="https://www.tiktok.com/@josephnjoroge9731">Tiktok</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Contact Popup Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2>Get in Touch</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
