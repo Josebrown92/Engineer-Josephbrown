@@ -12,8 +12,8 @@
     <div class="logo">Joseph Thee engineer</div>
     <nav>
       <ul>
-        <li><a href="../Home/index.html">Home</a></li>
-        <li><a href="About.html" class="active">About</a></li>
+        <li><a href="../home/home.html">Home</a></li>
+        <li><a href="/About/index.html" class="active">About</a></li>
         <li><a href="#" id="openContactAbout">Contact</a></li>
       </ul>
     </nav>
@@ -93,25 +93,47 @@
     </div>
   </footer>
 
-  <!-- Contact Popup Modal -->
-  <div id="contactModal" class="modal">
-    <div class="modal-content">
-      <span id="closeModal" class="close">&times;</span>
-      <h2>Get in Touch</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your name" required />
+<!-- Contact Popup Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2>Get in Touch</h2>
+    <form id="whatsappForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required />
 
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Your email" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email" required />
 
-        <label for="message">Message</label>
-        <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
 
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
+      <button type="submit" class="btn">Send via WhatsApp</button>
+    </form>
   </div>
+</div>
+
+<script>
+  document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // prevent normal form submit
+
+    // Your WhatsApp number (international format, no +, no spaces)
+    let phone = "254114169307"; // replace with your number
+
+    // Collect form values
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    // Build WhatsApp message
+    let text = `Hello, my name is ${name}.\nEmail: ${email}\nMessage: ${message}`;
+
+    // Encode and redirect
+    let url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank"); // open in new tab
+  });
+</script>
+
 
   <script src="script2.js"></script>
 </body>
