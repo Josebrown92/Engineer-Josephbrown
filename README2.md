@@ -1,96 +1,77 @@
-🏠 Portfolio Website — Home Page
+👤 Portfolio Website — About Page
 📌 Overview
 
-This is the Home Page of my multipage portfolio website.
-It introduces me as a Software Engineer, showcases my flagship project, and provides quick navigation to other sections of the site.
-
-The page is designed to be clean, responsive, and interactive with animations to engage visitors.
+The About Page of this portfolio website gives visitors and potential investors an insight into who I am, my technical expertise, and professional journey.
+It serves as a personal introduction, highlighting both technical skills and achievements while keeping the design clean and interactive.
 
 ✨ Features
 
-Header Navigation with hover effects (links change color on cursor hover).
+Hero Section: Bold introduction with a gradient background.
 
-Hero Section with an animated typing effect that cycles through multiple professional roles.
+Bio Section: Profile image + personal story (professional journey + mission).
 
-Call-to-Action Buttons (View My Work, Contact Me) with hover transitions.
+Skills Section: Interactive list of technical skills with hover effects & scroll animations.
 
-Featured Project (FinTrack – AI-Powered Finance App).
+Experience Section: Timeline format for work, projects, and education.
 
-Services Preview with three main offerings:
+Call-to-Action: Direct button to connect via the Contact Page.
 
-Web Development
+Responsive Layout: Mobile-friendly with stacked sections.
 
-Backend Systems
-
-AI & Automation
-
-Testimonials for credibility.
-
-Footer with copyright and social media links.
-
-JavaScript Interactivity:
-
-Header background color changes on scroll.
-
-Typing animation effect in the hero section.
+Consistent Navigation & Footer: Same as Home Page for seamless user experience.
 
 🛠️ Technologies Used
 
-HTML5 for structure
+HTML5 — Semantic structure
 
-CSS3 for styling & transitions
+CSS3 — Responsive grid, transitions, timeline design
 
-JavaScript (ES6) for dynamic interactions
+JavaScript (ES6) — Smooth scrolling + scroll-triggered animations
 
 📂 File Structure
-portfolio-home/
-│── index.html        # Home page structure
-│── styles.css        # Styles for layout, nav, hero, etc.
-│── script.js         # JS logic (scroll + typing effect)
-└── assets/           # Images (hero illustration, icons, etc.)
-
-📸 Screens (Key Sections)
-
-Header: Logo + navigation bar
-
-Hero: Animated text typing out roles
-
-Featured Project: Highlight of FinTrack app
-
-Services Preview: Quick overview of offerings
-
-Testimonials: Quotes for trust
-
-Footer: Social links and copyright
+portfolio-about/
+│── about.html        # About Page structure
+│── styles.css        # Styles (includes About Page sections)
+│── script.js         # JS logic (smooth scroll + animations)
+└── assets/           # Profile image and other media
 
 🚀 How It Works
+CSS Highlights
+
+Skills Section
+
+Hover effect changes background to green (#00b894) and lifts the card slightly.
+
+Scroll reveal animation triggers with opacity + translate effect.
+
+Experience Section
+
+Vertical timeline with left border + circular markers for each milestone.
+
+Green accent color (#00b894) to highlight dates and markers.
+
+CTA Section
+
+Dark background with a bright button (#00b894) that scales on hover.
+
 JavaScript Features
 
-Header Scroll Effect
+Smooth Navigation
 
-On scroll past 50px, the header background darkens for better readability.
+Clicking a nav link scrolls smoothly to the target section.
 
-Typing Animation
+Skills Reveal Animation
 
-Cycles through a list of roles (Software Engineer, Full-Stack Developer, AI Enthusiast, etc.).
+As the user scrolls down, each skill fades in and moves upward.
 
-Types letters one by one, pauses, deletes, and moves to the next phrase.
+Provides a modern, engaging interaction instead of static text.
 
-Includes a blinking cursor effect.
+📱 Responsiveness
 
-CSS Transitions
+On desktop, layout shows profile image + bio text side by side.
 
-Buttons: Smooth background + lift-up animation on hover.
+On mobile, profile image stacks above bio text for readability.
 
-Nav Links: Color and background change on hover for interactivity.
-
-📱 Responsiveness (Next Step)
-
-Currently, the page looks great on desktop.
-Upcoming improvements:
-
-Add mobile-friendly navigation (hamburger menu).
-
-Adjust layouts for smaller screens using media queries.
+Skills adapt into multiple rows automatically.
 
 
