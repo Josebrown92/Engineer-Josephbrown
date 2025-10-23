@@ -239,3 +239,32 @@ footer .socials a:hover {
   from { opacity: 0; transform: scale(0.9); }
   to { opacity: 1; transform: scale(1); }
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  } 
+  .hero-image {
+    margin-top: 2rem;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 1rem 0;
+  }
+  .service-grid {
+    flex-direction: column;
+  }
+  .service {
+    margin: 1rem 0;
+  }
+} 
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
+

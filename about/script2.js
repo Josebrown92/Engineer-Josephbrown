@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
 const typingElement = document.getElementById("typing");
 const words = [
   "A Software Engineer 🚀",
-  "A Full-Stack Developer 💻",
+  "A Full-Stack (MERN) Developer 💻",
   "An AI & Automation Enthusiast 🤖",
   "A Problem Solver 🔧"
 ];
